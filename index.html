@@ -23,7 +23,7 @@
   <header class="container_24">
     
     <div id="logo-container" class="grid_7 sombra">
-      <img src="img/logo.png" alt="logo" />
+      <img src="img/logo.jpg" alt="logo" />
     </div>
 
     <p id="direccion" class="grid_15 push_7 alpha">c/ José Galán Merino, s/n - 41015 - Sevilla <span id="telefono">Tlf: 954 47 88 47</span></p>
@@ -69,7 +69,7 @@
   
   <div id="feature" class="container_24">
 
-    <section id="buscador" class="grid_5">
+    <section id="buscador" class="grid_5 png_bg">
       <h2> BUSCADOR </h2>
       <form method="post" action="#">
 	<div>
@@ -90,13 +90,13 @@
 	  </select>
 	  <input id="nuevo" type="radio" name="tipo" value="nuevo" /> Nuevo
 	  <input id="usado" type="radio" name="tipo" value="usado" /> Usado
-	  <input class="boton png_bg" type="submit" name="buscar" value="buscar" />
+	  <button class="png_bg" type="submit">buscar</button>
 	</div>
       </form>
     </section> <!-- Fin #buscador -->
 
     <section id="stocks" class="grid_18">
-      <h1>Stock vehículos</h1>
+      <h1 class="png_bg">Stock vehículos</h1>
       <ul>
 	<li>
 	  <a href="#">
@@ -132,29 +132,29 @@
   <div id="contenido" class="container_24">
 
     <aside class="grid_6">
-      <button id="acceso">Acceso privado</button>
+      <button id="acceso" class="png_bg">Acceso privado</button>
       <div id="banner_v">
     	<img src="img/banner_v.jpg" alt="banner vertical" height="300" width="200" />
       </div>
     </aside>
 
     <div id="main" class="grid_12">
-      
-      <div id="destacado" class="redondeado">
+      <section id="destacado" class="redondeado">
+	<h1 class="png_bg">Vehiculo destacado</h1>
 	<img src="img/destacado.jpg" alt="vehiculo destacado" />
-	<h3>Lexus LFA / <span>Híbrido-Gaslina</span> / 2011</h3>
+	<h3>Lexus LFA / <span>Híbrido-Gasolina</span> / 2011</h3>
 	<button>+ Info</button>
-      </div>
+      </section>
       
       <div id="banner_h">
-	<img src="img/banner_h.jpg" alt="banner horizontal" />
+	<img src="img/banner_h.jpg" alt="banner horizontal" height="100" width="470" />
       </div>
 
     </div> <!-- Fin main -->
 
     <aside id="noticias" class="grid_6 omega">
-      <h1>Noticias</h1>
       <section>
+      <h1 id="banda" class="png_bg">Noticias</h1>
     	<article>
     	  <img src="img/foto-noticia1.jpg" alt="Foto Noticia" />
     	  <h1>Cómo cambiar tu rueda en siete sencillos pasos</h1>
@@ -218,6 +218,11 @@
 
     <p>Página web realizada por <a href="#">Autointegra</a></p>
   </footer>
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
 
 </body>
 

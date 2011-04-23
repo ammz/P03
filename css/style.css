@@ -203,6 +203,7 @@ header {
 	
 	position: absolute;
 	left: 0;
+	top: 0;
 	
 	-moz-border-radius-topleft: 0px;
 	-moz-border-radius-topright: 0px;
@@ -255,7 +256,7 @@ nav {
 nav ul li {
 	background-color: #807f74;
 	float: left;
-	padding: 0 26px 0 0;
+	padding: 0 20px 0 0;
 }
 
 nav ul li a {
@@ -282,16 +283,20 @@ nav li a:active {
     position: relative;
 	margin-top: -20px;
 	padding-top: 140px;
+	overflow: hidden;
 	height: 300px;
 }
 
 #buscador {
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	background: rgba(255,254,255,0.57);
+	_background: url(../img/bg_form.png) repeat-y;
 	padding-right: 5px;
 	margin-left: 20px;
 	padding-top: 10px;
-	
+
 	-moz-border-radius-topleft: 10px;
 	-moz-border-radius-topright: 10px;
 	-moz-border-radius-bottomright: 0px;
@@ -347,13 +352,8 @@ nav li a:active {
 	margin-left: 12px;
 }
 
-#buscador input.boton {
-	color: white;
-	border: none;
-	font: 12px/21px Verdana, "Lucida Grande", Lucida, sans-serif;
-	background: #651b32 url(../img/triangulo_dcha.png) no-repeat 5px;
-	right: 0px;
-	padding: 2px 6px 2px 15px;
+#buscador button {
+	
 	cursor: pointer;
 	position: relative;
 	float: right;
@@ -361,15 +361,17 @@ nav li a:active {
 	*bottom: 8px;
 	*right: -10px;
 	_bottom: 8px;
-	_padding: 0px 6px 0px 15px;}
+	_padding: 0px 6px 0px 15px;
+	margin-top: 15px;
+}
 
 #stocks {
 	font: 11px Verdana, "Lucida Grande", Lucida, sans-serif;
 	color: #000;
 	overflow: hidden;
 	_height: 100%;
-	margin-top: 145px;
-	padding-left: 12px;
+	margin-top: 150px;
+	padding-left: 235px;
 }
 
 #stocks h1 {
@@ -464,6 +466,13 @@ button#acceso a {
 	background-color: #ccc;
 }
 
+#banner_h {
+	width: 470px;
+	height: 100px;
+	background-color: #ccc;
+
+}
+
 #destacado {
     position: relative;
     background: white;
@@ -473,31 +482,15 @@ button#acceso a {
 	border: 8px solid #d6d1ca;
 }
 
-#destacado h2 {
-    height: 50px;
-    width: 370px;
-    background-color: #000;
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    top: 160px;
-    left: -160px;
-    display: block;
-    text-transform: uppercase;
-
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-
-    -moz-border-radius-topleft: 6px;
-    -moz-border-radius-topright: 6px;
-    -moz-border-radius-bottomright: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-	text-align: center;
-	line-height: 50px;
+#destacado h1 {
+	position: absolute;
+	background: transparent url(../img/banda-destacado.png) no-repeat 0 0;
+	height: 77px;
+	width: 100%;
+	margin-left: 214px;
+	color: transparent;
+	margin-top: -8px;
+	z-index: 20;
 }
 
 #destacado img {
@@ -505,42 +498,40 @@ button#acceso a {
 	margin-right: auto;
 	display: block;
 	position: relative;
-	top: 20px;
+	padding-top: 45px;
 }
 
-#destacado .precio {
-	float: right;
-	text-align: right;
+#destacado h3 {
+	padding: 10px 40px;
+	line-height: 25px;
+	font-size: 16px;
 }
 
-#destacado hr {
-	margin: 2px 2px 6px;
-	border-top-color: black;
+#destacado h3 span {
+	color: #666666;
+}
+
+
+button {
+	border: none;
+	background: url(../img/bg_boton.png) no-repeat 0;
+	padding: 6px 50px 6px 10px;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+
+	color: black;
+	font-weight: bold;	
+	
 }
 
 #destacado button {
-	border: none;
-	background-color: black;
-	padding: 4px 10px;
 	position: absolute;
 	bottom: 12px;
 	right: 28px;
-	color: white;
 }
 
-#destacado button a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-}
-
-#destacado input {
-	border: none;
-	color: white;
-	background-color: black;
-	font-weight: bold;
-	padding: 6px 20px;
-}
 
 aside#noticias {
 	background: white;
@@ -550,7 +541,7 @@ aside#noticias {
 	height: 100%;
 }
 
-#noticias>h1 {
+#noticias h1#banda {
 	position: absolute;
 	background: transparent url(../img/banda.png) no-repeat 0 0;
 	height: 77px;
