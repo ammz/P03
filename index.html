@@ -22,49 +22,51 @@
   
   <header class="container_24">
     
-    <div id="logo-container" class="grid_8">
+    <div id="logo-container" class="grid_7 sombra">
       <img src="img/logo.png" alt="logo" />
     </div>
 
-    <p id="direccion" class="grid_15">c/ José Galán Merino, s/n - 41015 - Sevilla <span>Tlf: 954 47 88 47</span></p>
+    <p id="direccion" class="grid_15 push_7 alpha">c/ José Galán Merino, s/n - 41015 - Sevilla <span id="telefono">Tlf: 954 47 88 47</span></p>
     
     <menu class="grid_1">
       <ul>
-	<li>
-	  <a href="#">
-	    <img alt="facebook" src="img/icons/facebook.png" />
-	  </a>
-	</li>
-	<li>
-	  <a href="#">
-	    <img alt="linkedin" src="img/icons/linkedin.png" />
-	  </a>
-	</li>
-	<li>
-	  <a href="#">
-	    <img alt="twitter" src="img/icons/twitter.png" />
-	  </a>
-	</li>
-	<li>
-	  <a href="#">
-	    <img alt="email" src="img/icons/email.png" />
-	  </a>
-	</li>
+    	<li>
+    	  <a href="#">
+    	    <img alt="facebook" src="img/icons/facebook.png" />
+    	  </a>
+    	</li>
+    	<li>
+    	  <a href="#">
+    	    <img alt="linkedin" src="img/icons/linkedin.png" />
+    	  </a>
+    	</li>
+    	<li>
+    	  <a href="#">
+    	    <img alt="twitter" src="img/icons/twitter.png" />
+    	  </a>
+    	</li>
+    	<li>
+    	  <a href="#">
+    	    <img alt="email" src="img/icons/email.png" />
+    	  </a>
+    	</li>
       </ul>
     </menu>
 
-    <nav class="grid_16 push_8">
+    <nav class="grid_15 push_7 alpha">
       <ul>
-	<li><a href="#">Inicio</a></li>
-	<li><a href="#">Stock de vehículos</a></li>
-	<li><a href="#">Servicios</a></li>
-	<li><a href="#">¿Dónde estamos?</a></li>
-	<li><a href="#">Contacto</a></li>
+	<li><a href="#">&gt; Inicio</a></li>
+	<li><a href="#">&gt; Stock vehículos</a></li>
+	<li><a href="#">&gt; Servicios</a></li>
+	<li><a href="#">&gt; ¿Dónde estamos?</a></li>
+	<li><a href="#">&gt; Contacto</a></li>
       </ul>
     </nav>
 
   </header>
-<div class="clear"></div>
+
+  <div class="clear"></div>
+  
   <div id="feature" class="container_24">
 
     <section id="buscador" class="grid_5">
@@ -94,7 +96,7 @@
     </section> <!-- Fin #buscador -->
 
     <section id="stocks" class="grid_18">
-      <h3>STOCK DE VEHICULOS</h3>
+      <h1>Stock vehículos</h1>
       <ul>
 	<li>
 	  <a href="#">
@@ -125,18 +127,20 @@
 
   </div> <!-- Fin feature -->
 
+<div class="clear"></div>
+
   <div id="contenido" class="container_24">
 
-    <!-- <aside class="grid_6"> -->
-    <!--   <button>Acceso privado</button> -->
-    <!--   <div id="banner_v"> -->
-    <!-- 	<img src="img/banner_v.jpg" alt="banner vertical" /> -->
-    <!--   </div> -->
-    <!-- </aside> -->
+    <aside class="grid_6">
+      <button id="acceso">Acceso privado</button>
+      <div id="banner_v">
+    	<img src="img/banner_v.jpg" alt="banner vertical" height="300" width="200" />
+      </div>
+    </aside>
 
     <div id="main" class="grid_12">
       
-      <div id="destacado">
+      <div id="destacado" class="redondeado">
 	<img src="img/destacado.jpg" alt="vehiculo destacado" />
 	<h3>Lexus LFA / <span>Híbrido-Gaslina</span> / 2011</h3>
 	<button>+ Info</button>
@@ -148,48 +152,50 @@
 
     </div> <!-- Fin main -->
 
-    <!-- <aside class="grid_6"> -->
-    <!--   <section id="noticias"> -->
-    <!-- 	<article> -->
-    <!-- 	  <img src="img/foto-noticia1.jpg" alt="Foto Noticia" /> -->
-    <!-- 	  <h1>Cómo cambiar tu rueda en siete sencillos pasos</h1> -->
-    <!-- 	  <button>Leer +</button> -->
-    <!-- 	</article> -->
-    <!-- 	<article> -->
-    <!-- 	  <img src="img/foto-noticia2.jpg" alt="Foto Noticia" /> -->
-    <!-- 	  <h1>El nuevo Concept-car de Toyota llega Dublín</h1> -->
-    <!-- 	  <button>Leer +</button> -->
-    <!-- 	</article> -->
-    <!--   </section> -->
-    <!-- </aside> -->
+    <aside id="noticias" class="grid_6 omega">
+      <h1>Noticias</h1>
+      <section>
+    	<article>
+    	  <img src="img/foto-noticia1.jpg" alt="Foto Noticia" />
+    	  <h1>Cómo cambiar tu rueda en siete sencillos pasos</h1>
+    	  <button class="redondeado">Leer +</button>
+    	</article>
+    	<article>
+    	  <img src="img/foto-noticia2.jpg" alt="Foto Noticia" />
+    	  <h1>El nuevo Concept-car de Toyota llega Dublín</h1>
+    	  <button class="redondeado">Leer +</button>
+    	</article>
+      </section>
+    </aside>
 
   </div> <!-- Fin content -->
 
   <div class="clear"></div>
 
   <footer class="container_24">
-    
-    <ul class="grid_14">
-      <li>
-	<a href="#">Inicio</a>
-      </li>
-      <li>
-	<a href="#">Stock vehículos</a>
-      </li>
-      <li>
-	<a href="#">Servicios</a>
-      </li>
-      <li>
-	<a href="#">Donde estamos</a>
-      </li>
-      <li>
-	<a href="#">Contacto</a>
-      </li>
-      <li>
-	<a href="#">Acceso privado</a>
-      </li>
-    </ul>
-    
+    <nav>
+      <ul class="grid_14">
+	<li>
+	  <a href="#">Inicio</a>
+	</li>
+	<li>
+	  <a href="#">Stock vehículos</a>
+	</li>
+	<li>
+	  <a href="#">Servicios</a>
+	</li>
+	<li>
+	  <a href="#">Donde estamos</a>
+	</li>
+	<li>
+	  <a href="#">Contacto</a>
+	</li>
+	<li>
+	  <a href="#">Acceso privado</a>
+	</li>
+      </ul>
+    </nav>
+
     <menu class="grid-3">
       <ul>
 	<li>
