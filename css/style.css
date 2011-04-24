@@ -473,7 +473,7 @@ button#acceso a {
 
 }
 
-#destacado {
+#destacado, #ficha {
     position: relative;
     background: white;
 	height: 370px;
@@ -493,12 +493,26 @@ button#acceso a {
 	z-index: 20;
 }
 
-#destacado img {
+#ficha h1 {
+	margin: 15px 10px 0;
+	color: #4d4d4d;
+	font-size: 16px;
+}
+
+#ficha h1 span {
+	float: right;
+}
+
+#destacado img, #ficha img {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	position: relative;
 	padding-top: 45px;
+}
+
+#ficha img {
+	padding-top: 10px;
 }
 
 #destacado h3 {
@@ -533,12 +547,29 @@ button {
 }
 
 
-aside#noticias {
+aside#noticias, aside#datos {
 	background: white;
 	font: normal 10px Verdana, "Lucida Grande", Lucida, sans-serif;
 	margin-top: -10px;
 	margin-left: 10px;
 	height: 100%;
+}
+
+aside#datos article{
+	padding: 10px;
+}
+
+#datos table {
+	width: 210px;
+	display: inline-block;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #afafa6;
+	font: 12px/18px Verdana, "Lucida Grande", Lucida, sans-serif;
+}
+
+#datos table td:first-child {
+	width: 110px;
 }
 
 #noticias h1#banda {
@@ -564,15 +595,24 @@ aside#noticias {
 	margin-bottom: 12px;
 }
 
-
-
-#noticias button {
+#noticias button, #datos button {
 	border: none;
 	font: 12px/21px Verdana, "Lucida Grande", Lucida, sans-serif;
 	background: #4d4d4d;
 	padding: 1px 10px 1px 15px;
 	float: right;
 	color: white;
+}
+
+#datos button {
+	float: none;
+	margin: 10px 0;
+}
+
+#observaciones {
+	height: 150px;
+	border: 1px solid #a7a8a8;
+	padding: 10px;
 }
 
 #noticias button a {
@@ -618,117 +658,14 @@ footer menu ul li {
 
 
 
- ============================================ 
- FICHA                                        
- ============================================ 
 
-#ficha {
-	position: relative;
-	color: white;
-	margin-bottom: 20px;
-	overflow: hidden;
-	margin-right: 14px;
-}
 
-#ficha h2 {
-	color: white ;
-	font: bold 18px Verdana, "Lucida Grande", Lucida, sans-serif;
-	border-bottom: 6px solid #afafa6;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-}
 
-#ficha img {
-	border: 3px solid white;
-	float: left;
-	margin-right: 20px;
-}
 
-#ficha table {
-	width: 290px;
-	display: inline-block;
-	padding-bottom: 5px;
-	margin-bottom: 5px;
-	border-bottom: 3px solid #afafa6;
-	font: 12px/18px Verdana, "Lucida Grande", Lucida, sans-serif;
-}
 
-#ficha table td:first-child {
-	width: 110px;
-}
 
-#ficha button,
-button#imprimir, button#contactar {
-	height: 21px;
-	border: 1px solid #bccdc9;
-	padding-left: 17px;
-	color: white;
-	font-size: 10px;
-	background: #afafa7 url(../img/triangulo_dcha.png) no-repeat 7px;
-	text-align: left;
-	
-	*padding-right: 5px;
-}
 
-#ficha button a,
-button#imprimir a, button#contactar a {
-	color: white;
-	font-family: Verdana, "Lucida Grande", Lucida, sans-serif;
-	font-weight: bold;
-	text-decoration: none;
-}
 
-#ficha button {
-	width: 200px;
-	display: block;
-	margin-right: auto;
-	margin-top: 12px;
-	margin-left: auto;
-}
-
-#nav_container {
-	border-top: 3px solid #afafa6;
-	border-bottom: 3px solid #afafa6;
-	margin-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 40px;
-	margin-bottom: 20px;
-	
-	overflow: hidden;
-	height: 104px;
-}
-
-#carrusel #prev,
-#carrusel #next
-{
-	height: 100px;
-	float: left;
-	padding-top: 45px;
-}
-
-#carrusel #nav_thumbs div {
-	height: 100px;
-	float: left;
-	padding: 0 11px;
-}
-
-#carrusel #nav_thumbs img {
-	border: 2px solid white;
-}
-
-#carrusel #next {
-	float: right;
-}
-
-#imprimir{
-	float: left;
-}
-
-#contactar {
-	float: right;
-	margin-right: 20px;
-}
 
 
 
