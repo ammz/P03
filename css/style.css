@@ -353,7 +353,7 @@ nav li a:active {
 }
 
 #buscador button {
-	
+	font-size: 12px;
 	cursor: pointer;
 	position: relative;
 	float: right;
@@ -365,7 +365,7 @@ nav li a:active {
 	margin-top: 15px;
 }
 
-#stocks {
+#stocks, #galeria {
 	font: 11px Verdana, "Lucida Grande", Lucida, sans-serif;
 	color: #000;
 	overflow: hidden;
@@ -374,7 +374,7 @@ nav li a:active {
 	padding-left: 235px;
 }
 
-#stocks h1 {
+#stocks h1, #galeria h1 {
 	position: absolute;
 	color: #444;
 	list-style-image: none;
@@ -389,6 +389,8 @@ nav li a:active {
 	text-align: center;
 }
 
+
+
 #stocks ul li {
 	float: left;
 	padding-right: 10px;
@@ -396,34 +398,34 @@ nav li a:active {
 	list-style-type: none;
 }
 
-#stocks img {
+
+#stocks img, #galeria img {
 	border: 2px solid white;
 }
 
-#stocks a {
+#stocks a, #galeria a {
 	color: white;
 	text-decoration: none;
 }
 
-#stocks a:hover {
+#stocks a:hover, #galeria a:hover {
 	text-decoration: underline;
 }
 
-#stocks button {
-	margin-top: 15px;
-	border: 1px solid white;
-	font: 12px/21px Verdana, "Lucida Grande", Lucida, sans-serif;
-	background: #651b32;
-	bottom: 10px;
-	padding: 0px 6px;
-	float: right;
-	color: white;
+#galeria ul {
+	margin-left:0px;
 }
 
-#stocks button a {
-	text-decoration: none;
-	color: white;
-	font: bold 11px Verdana, "Lucida Grande", Lucida, sans-serif;
+#galeria ul li {
+	float: left;
+	padding-right: 9px;
+	padding-left: 9px;
+	list-style-type: none;
+}
+
+#galeria ul li:first-child,
+#galeria ul li:last-child {
+	line-height: 96px;
 }
 
 #contenido {
@@ -444,18 +446,12 @@ button#acceso {
 	height: 42px;
 	border: none;
 	margin-bottom: 30px;
+	padding-right: 10px;
 	text-transform: uppercase;
 	font: bold 12px/24px Verdana, "Lucida Grande", Lucida, sans-serif;
 	margin-left: 12px;
 	background: transparent url(../img/boton-acceso.png) no-repeat;
 	color: #fffeff;
-	text-align: center;
-}
-
-button#acceso a {
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
 }
 
 #banner_v {
@@ -541,11 +537,11 @@ button {
 }
 
 #destacado button {
+	font-size: 12px;
 	position: absolute;
 	bottom: 12px;
 	right: 28px;
 }
-
 
 aside#noticias, aside#datos {
 	background: white;
