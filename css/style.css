@@ -522,6 +522,13 @@ button#acceso {
 }
 
 
+#destacado p {
+	margin: 0px 40px;
+	background: #bbb;
+	padding: 2px 6px;
+	width: 60px;
+}
+
 button {
 	border: none;
 	background: url(../img/bg_boton.png) no-repeat 0;
@@ -627,6 +634,11 @@ footer nav {
 	padding-left: 0;
 }
 
+footer nav li:hover,
+footer nav li:active {
+	background: transparent;
+}
+
 footer nav ul li {
 	float: left;
 	padding-right: 10px;
@@ -652,9 +664,73 @@ footer menu ul li {
 	margin: 0 0 0 10px;
 }
 
+footer nav ul li a:hover {
+	color: #bbb;
+}
+
+footer a {
+	text-decoration: none;
+	color: #444;
+}
 
 
 
+
+#contenido a {
+    text-decoration: none;
+    color: green;
+    font-weight: normal;
+}
+
+table {
+    width: 620px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: verdana, arial, sans-serif;
+    font-size:11px;
+    margin-bottom: 20px;
+}
+
+thead th {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+thead th.pref {
+	text-align: left;	
+}
+
+tbody tr:hover {
+	background: #ccc;
+}
+
+tbody tr {
+	border-bottom: 1px solid #b7b7b7;
+	height: 64px;
+}
+
+td {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
+td.pref {
+	text-align: left;
+	font-weight: bold;
+	color: #474747;
+	width: 140px;
+}
+
+td img {
+    float: left;
+}
+
+.paginacion {
+    float: right;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
 
 
 
